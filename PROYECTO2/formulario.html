@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="formulario-css.css">
+</head>
+<body>
+	<form action="registroN.php" method="post">
+
+		<!-- <input type="number" name="claveus" placeholder="digite su codigo de usuario"><br><br>
+		
+		<input type="number" name="clavep" placeholder="digite el codigo del producto"><br><br>
+
+		<input type="number" name="cantidad" placeholder="digite cantidad"><br><br>
+
+		<input type="number" name="telefono" placeholder="digite un numero telefonico"><br><br>
+
+		<input type="text" name="direccion" placeholder="digite la direccion"><br><br>
+
+		<input type="submit" value="Enviar"> -->
+		<div class="mercadotarjeta-container">
+  <div id="mercadotarjeta-checkout">
+    <h1>Digite los datos de la compra</h1>
+    <form class="mercadotarjeta-form" action="submit">
+      
+      <div>
+        <label class="">codigo usuario</label>
+        <input class="form-control" type="text" placeholder="codigo usuario" name="claveus">
+      </div>
+      <br>
+      <div>
+        <label class="">codigo producto</label>
+        <!--<div class="mercadotarjeta-input-container"-->
+          <input class="form-control" type="number" placeholder="Ej: 123" name="clavep">
+          <i id="cvc" class="fa fa-question-circle"></i>
+        <!--/div-->
+        
+      </div>
+        <br>
+      <div >
+        <label class="">Cantidad</label>
+        <input class="form-control" type="text" placeholder="Ej: 1" name="cantidad">
+      </div>
+        <br>
+      
+        
+      <div>
+        <label class="">Telefono</label>
+        <input class="form-control" type="text" placeholder="Ej: +57 " name="telefono">
+       
+      </div>
+      <br>
+      <div>
+        <label class="">Direccion</label>
+        <input class="form-control" type="text" placeholder="Ej: calle 46 a" name="direccion">
+       
+      </div>
+      <br><br>
+      <button id="mercadotarjeta-button" class="btn btn-block btn-success submit-button" type="submit">
+        <span class="submit-button-lock"></span>
+        <span class="align-middle">Continuar</span>
+      </button>
+     <!-- <button src="https://www.paypal.com/sdk/js?client-id=sb" class="btn btn-block btn-success submit-button" type="submit">
+        
+      <script src="https://www.paypal.com/sdk/js?client-id=sb"></script>
+              <script>paypal.Butons().render('body');</script>
+              <span class="align-middle">Continuar</span>
+      </button-->
+
+    </form>
+  </div>
+    
+</div>
+	</form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
