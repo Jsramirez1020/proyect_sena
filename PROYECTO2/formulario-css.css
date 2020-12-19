@@ -1,0 +1,154 @@
+.mercadotarjeta-container {
+  margin-top: 50px;
+  margin: 80px;
+  height: 350px;
+}
+
+#mercadotarjeta-checkout {
+  z-index: 100001;
+  width: 700px;
+  height: 100%;
+  min-height: 100%;
+  background: 0 0 #ffffff;
+  border-radius: 8px;
+  border: 1px solid #dedede;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+#mercadotarjeta-checkout>h1 {
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  background: #EEF2F4;
+  color: #5D6F78;
+  font-size: 24px;
+  font-weight: 300;
+  border-bottom: 1px solid #DEDEDE;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+#mercadotarjeta-checkout > .mercadotarjeta-tarjetas {
+  text-align:center;
+  margin: 20px 25px 10px;
+}
+
+#mercadotarjeta-checkout > .mercadotarjeta-tarjetas > img {
+  width:100%;
+}
+
+.mercadotarjeta-form {
+  padding: 1.4em;
+  margin: 0 25px 25px;
+}
+
+/*.mercadotarjeta-form-izquierda {
+  background-color: red;
+  padding-left: 0px;
+  float: left;
+  width: 50%
+}
+*/
+/*.mercadotarjeta-form-derecha {
+  background-color: blue;
+  margin-top: 0px;
+  padding-right: 5px;
+  float: right;
+  width: 45%
+}
+*/
+.mercadotarjeta-form label {
+  color: #46545C;
+  margin-bottom: 2px;
+  display:block;
+  font-size: 14px;
+}
+
+.mercadotarjeta-form-vencimiento > input{
+  display:inline-block;
+  width:47%;
+}
+
+
+.mercadotarjeta-form input, select {
+  box-shadow: none!important;
+  margin: 0;
+  padding: 0;
+  border-radius: 0.25em;
+  padding-left: 5px;
+}
+
+.mercadotarjeta-form input:focus, select:focus {
+  border-color: #b0e5e3!important;
+  background-color: #EEF9F9!important;
+}
+
+#mercadotarjeta-button {
+  background-position: center;
+  outline: 0!important;
+  height: 42px;
+  font-size: 16px;
+  background-color: #51BFA5!important;
+  
+}
+
+#mercadotarjeta-button:hover {
+  background-color: #6DCECB!important;
+}
+
+#mercadotarjeta-button:active {
+  background-color: #4FBCB9!important;
+}
+
+#mercadotarjeta-button:disabled {
+  background: rgba(84, 199, 195, .5)!important;
+  color: #FFF!important;
+}
+
+.mercadotarjeta-input-container {
+  position: relative;
+}
+
+.mercadotarjeta-input-container input {
+  padding-right: 25px;
+}
+
+.mercadotarjeta-input-container>i, a[role="button"] {
+  color: #d3d3d3;
+  width: 25px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 16px;
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.mercadotarjeta-input-container>i:hover, a[role="button"]:hover {
+  color: #777;
+}
+
+.mercadotarjeta-preview-container {
+  padding-top:10px;
+  overflow: hidden;
+}
+
+.mercadotarjeta-preview-container.two-card div {
+  width: 48%;
+  height: 80px;
+}
+
+.mercadotarjeta-preview-container.two-card div.mercadotarjeta-amex-preview {
+  float: right;
+}
+
+.mercadotarjeta-preview-container.two-card div.mercadotarjeta-visa-preview {
+  float: left;
+}
+
+.mercadotarjeta-amex-preview {
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOYAAACOCAYAAAAlzXSMAAAAAXNSR0IArs4c6QAAFg9JREFUeNrtnfeTFcXaxw+ZBZacM0oGySBIXECiSBQQAQFhJaclo+SgAsuS2QVBlrCLSlQBAVGCCpK5XiW4vFVvvXX/gPvDe9+qt+r2Pd9eeuiZ6TkBzuI563erPgVn5jk93T397X76mTndPl+Qv0+v3I/PuHW/MiEkMkBTvnD/3vr883wZdx6NyriX9XXmvax/Zt57LAghkSbrn9AYtAbNBRTlwTuP22Tce/wbK42QFwc0B+0ZRXno9h8D/Ab/YkUR8qeI81/QoE2U++8+apF59/H/soII+RPxaxBaVLrMk3k36yYrhpBoEGfWTWjSl3H30ZusEEKiyK31a9IvzMfprAxCokmYj9N9B289/Acrg5DoAZr0Zdz54/9ZGYRE0Yjp16SPFUFI9EFhEkJhEkIoTEIoTEIIhUkIhUkIoTAJoTBZCYRQmIQQCpMQCpMQQmESQmESQihMQihMEsFfn2eJTad+ENvP/8z6iEIO3flDpHx9QWw5c1kcuv0o4vYxJcx1R06LPHnzSuJLlhLp13832jVt38myA/O27radT0pJtZ1v1qGLda5VQnfbOROVatay7Nt072W0KRRXRJSuUFG07NJNLE//wnb9es1bSZvqdeq78p588rxo0q6D/L7P55PEFYsXvUeOFXt/vudZN598eSqkumnbo4+0yV+goPyO83zF6jXl+b6jxwe8F60SXg9eTzWy62lx2n6RN18+eaxByzay09HTavJaR+s7i9PSjfWK7xcoVEiWrU6T5mL6J5uN5fK6Dy06dxPLPjts+86rr/cOWobyVavZvoOy4PoFCxe27g/y1q5nX5HyzfeueoJ93aYtXPbIL4SaK4SJxqkKB
